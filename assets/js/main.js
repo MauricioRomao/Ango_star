@@ -44,17 +44,28 @@ function Modal_login() {
 function editar_user() {
     const abrir_editor = document.querySelector('.Editor')
     abrir_editor.style.display = 'block'
+    const modalLogon=document.querySelector('.contentLogon')
+    modalLogon.style.display='none'
 
 }
 function fechar_editor() {
     const abrir_editor = document.querySelector('.Editor')
     abrir_editor.style.display = 'none'
+    const modalLogon=document.querySelector('.contentLogon')
+    modalLogon.style.display='block'
+
+}
+function indes(){
+    alert("Indesponivel de momento")
 }
 // PEGAR O NOME
 function feito() {
     const abrir_editor = document.querySelector('.Editor')
     const EditadoNome = document.querySelector('.EditadoNome')
     const Usernome = document.querySelector('.Usernome')
+    const modalLogon=document.querySelector('.contentLogon')
+    modalLogon.style.display='block'
+
     Usernome.innerHTML = `" ${EditadoNome.value} "` 
     abrir_editor.style.display = 'none'
     localStorage.setItem('Nome', JSON.stringify(EditadoNome.value))

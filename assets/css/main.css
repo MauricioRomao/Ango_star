@@ -235,11 +235,15 @@
 
  .editor_i {
      position: absolute;
-     top: 70px;
-     left: 180px;
+     top: 85px;
+     left: 190px;
      width: 40px !important;
-     height: 20px;
+     text-align: center;
+     align-items: center;
+     height: 40px !important;
+     border-radius: 50%;
      background-color: white !important;
+     font-size: 22px;
  }
 
  .editorNome {
