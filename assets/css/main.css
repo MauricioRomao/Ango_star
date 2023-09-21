@@ -1,0 +1,724 @@
+ /* imports*/
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     background-color: white;
+     font-family: 'roboto', Arial, Helvetica, sans-serif;
+     transition: display 1s ease-in-out;
+
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: 70px;
+     position: fixed;
+     top: 0;
+     background-color: rgb(130, 35, 255);
+ }
+
+ .logo .bx {
+     color: goldenrod;
+     font-size: 23px;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid white;
+
+
+ }
+
+
+ .menuTrue ul li {
+     margin-left: 23px;
+     display: inline-block;
+
+ }
+
+ .menuTrue ul li a {
+     color: white;
+     padding: 10px;
+     border-radius: 5px;
+     transition: 0.2s background ease-in-out;
+ }
+
+ .menuTrue ul li a:hover {
+     background-color: white;
+     color: rgb(13, 1, 36);
+ }
+
+ .menu {
+     display: flex;
+     justify-content: space-around;
+     width: 400px;
+     align-items: center;
+ }
+
+ .menuSocialIcons .bx {
+     color: white;
+     margin-left: 12px;
+     cursor: pointer;
+     font-size: 33px;
+
+ }
+
+
+ /*End*/
+
+
+
+ /* Modal logon*/
+ .modalLogon {
+
+     position: fixed;
+     height: 100vh;
+     width: 100%;
+     background-color: rgba(0, 0, 0, .6);
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     display: none;
+ }
+
+ @keyframes modalLogon {
+     0% {
+         margin-bottom: 1000px;
+     }
+
+     50% {
+
+         margin-top: 100px;
+     }
+
+
+ }
+
+ .modalLogon .contentLogon {
+     background-color: white;
+     box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, .2);
+     width: 350px;
+     height: 250px;
+     border-radius: 10px;
+     animation: modalLogon 1s;
+
+ }
+
+ .modalLogon .contentLogon .bx-edit {
+     background-color: rgb(194, 194, 194);
+     float: right;
+     margin: 18px 16px;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+     cursor: pointer;
+     border-radius: 50%;
+ }
+
+ .inputNone {
+     display: none;
+ }
+
+ .logon_btn_concluido {
+     margin: 30px 23px;
+     float: right;
+     padding: 10px;
+     border: 1px solid rgb(18, 7, 29);
+     font-size: 15px;
+     cursor: pointer;
+ }
+
+ .logon_btn_concluido:hover {
+     background-color: blueviolet;
+     color: white;
+     border-radius: 5px;
+ }
+
+ .UserImage img {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     background-color: rgba(0, 0, 0, .4);
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     cursor: pointer;
+     margin-left: 120px;
+ }
+
+ .Usernome {
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .userinfo {
+     margin-top: 30px;
+ }
+
+ /* active_modal*/
+ .active_modal {
+     position: absolute;
+     left: 3px;
+     top: 200px;
+ }
+
+ .active_modal img {
+     display: none;
+     height: 1.8em;
+     border-radius: 1px;
+     cursor: pointer;
+
+ }
+
+ /* editor*/
+
+ @keyframes modalEditar {
+     0% {
+         margin-top: 1000px;
+     }
+
+     50% {
+
+         margin-bottom: 100px;
+     }
+
+
+ }
+
+
+
+
+
+ .Editor {
+     width: 350px;
+     height: 300px;
+     background-color: white;
+     box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, .2);
+     border-radius: 10px;
+     position: absolute;
+     bottom: 300px;
+     display: none;
+     animation: modalEditar 1s;
+ }
+
+ .editorImg {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+
+ }
+
+ .editorImg img {
+     height: 100px;
+     border-radius: 80%;
+     cursor: pointer;
+     background-color: rgba(0, 0, 0, .4);
+ }
+
+ .editor_i {
+     position: absolute;
+     top: 70px;
+     left: 180px;
+     width: 40px !important;
+     height: 20px;
+     background-color: white !important;
+ }
+
+ .editorNome {
+     margin: 40px 30px;
+ }
+
+ .editorNome input {
+     padding: 10px;
+ }
+
+ .Editor .bx-x {
+     position: absolute;
+     right: 10px;
+     font-size: 20px;
+     cursor: pointer;
+     padding-top: 10px;
+
+ }
+
+ .editar_concluido {
+     float: right;
+     margin: -10px 20px;
+     padding: 10px;
+     cursor: pointer;
+ }
+
+ .editar_concluido:hover {
+     background-color: rgb(66, 19, 110);
+     border: white;
+     color: white;
+ }
+.EditadoNome{
+    outline: 1px solid white;
+}
+ /* start pInterfacetextMobile*/
+
+ .pInterfacetextMobile {
+     margin: 150px auto;
+     color: rgb(55, 0, 158);
+     font-size: 11px;
+     text-align: center;
+     display: none;
+ }
+
+ .pInterfacetextMobile h1 {
+     color: rgb(21, 2, 46);
+ }
+
+ .pInterfacetextMobile p {
+     font-size: 15px !important;
+     margin-top: 20px;
+     text-align: center;
+     color: rgb(31, 0, 88);
+ }
+
+
+ /* start pInterface*/
+
+ .pInterface {
+     width: 100%;
+     margin-top: 190px;
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     color: rgb(39, 0, 90);
+     background-size: 733px;
+     font-size: 13pt;
+ }
+
+ .pInterface .text h1 {
+     margin-bottom: 30px;
+     color: black;
+ }
+
+ .pInterface .text h3 {
+     margin-bottom: 15px;
+ }
+
+ .pInterface .text p {
+     margin-bottom: 25px;
+     color: rgb(41, 2, 77);
+ }
+
+ .pInterface .text .textLink li {
+     display: inline-block;
+
+ }
+
+ .pInterface .text .textLink li a:hover {
+     background-color: blueviolet;
+     transition: background-color 0.5s ease-in-out;
+ }
+
+ .pInterface .text .textLink li a {
+     background-color: rgba(0, 0, 0, 0.5);
+     padding: 10px;
+
+     color: white;
+
+ }
+
+ .pInterface .text .textLink .active {
+     background-color: blueviolet;
+ }
+
+ .imglogo {
+     margin-top: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100px;
+     height: 100px;
+     border-radius: 20px;
+     background-color: rgba(0, 0, 0, 0.2);
+     border: 1px solid rgb(130, 35, 255);
+     animation: girar 10s infinite;
+
+ }
+
+ @keyframes girar {
+     0% {
+         rotate: 0deg;
+     }
+
+     50% {
+         rotate: 360deg;
+     }
+
+     10% {
+         rotate: 0deg;
+     }
+
+ }
+
+
+ .imglogo a {
+     font-size: 20pt;
+     padding: 20px;
+     border-radius: 100%;
+     color: rgb(73, 22, 168);
+     border: 1px solid rgb(17, 0, 114);
+ }
+
+ .start_btn {
+     display: none;
+     margin-top: 70px;
+     text-align: center;
+
+ }
+
+ .start_btn a {
+     padding: 15px;
+     color: white;
+     border-radius: 3px;
+     background-color: rgba(110, 32, 255, 0.959);
+
+ }
+
+ .cards {
+     margin: 100px auto;
+     display: flex;
+     width: 800px;
+     flex-wrap: wrap;
+     justify-content: center;
+     justify-content: space-around;
+     height: 500px;
+
+ }
+
+ .cards .estruture {
+     width: 300px;
+     color: white;
+     height: 200px;
+     margin-top: 15px;
+     border-radius: 8px;
+     box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, .2);
+
+ }
+
+ .estruture .bx {
+     height: 30px;
+     width: 40px;
+     align-items: center;
+     display: flex;
+     border: 1px solid rgb(39, 0, 90);
+     padding: 10px;
+     margin: 10px 10px;
+     color: rgb(28, 0, 54);
+ }
+
+ .estruture h2 {
+     font-size: 13pt;
+     margin-left: 12px;
+     color: rgb(120, 62, 255);
+ }
+
+ .estruture p {
+     padding: 10px;
+     color: rgb(0, 0, 0);
+     margin-top: 12px;
+     margin-left: 12px;
+     font-size: 17px;
+
+ }
+
+ .comenter {
+     color: rgb(44, 1, 100);
+     text-align: center;
+
+ }
+
+ .comenter p {
+     color: rgb(114, 113, 116);
+     margin-bottom: 20px;
+
+ }
+
+ .modal {
+     background-color: rgb(255, 255, 255);
+     position: absolute;
+     width: 100%;
+     top: 0;
+     height: 100%;
+     overflow: hidden;
+     overflow: auto;
+     display: none;
+     animation: modal 1s;
+
+ }
+
+ @keyframes modal {
+     0% {
+         margin-left: -1000px;
+         rotate:360deg;
+         transition: 1s ease-in-out;
+     }
+
+     50% {
+
+     }
+
+
+ }
+
+ .icone_close {
+     float: right;
+     margin: 10px 10px;
+     cursor: pointer;
+     width: 30px;
+     height: 30px;
+     display: flex;
+     font-size: 28px;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     transition: background 0.4s ease-in-out;
+ }
+
+ .icone_close:hover {
+     background-color: rgb(95, 95, 95);
+     color: rgb(255, 255, 255);
+
+ }
+
+ .modal h2 {
+     margin-top: 40px;
+     text-align: center;
+     font-size: 19px;
+     margin-left: 50px;
+ }
+
+ .modal p {
+     text-align: center;
+     font-size: 15px;
+     color: rgb(68, 68, 68);
+
+
+ }
+
+ .modal_content {
+     margin: 40px auto;
+     flex-wrap: wrap;
+     width: 800px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .modal_content .modal_estruture {
+     background-color: rgba(0, 0, 0, 0.4);
+     margin: 10px;
+     width: 300px;
+     border-radius: 5px;
+     height: 370px;
+ }
+
+ .modal_content .modal_estruture img {
+     height: 100px;
+     margin: 10px 80px;
+     border-radius: 10px;
+
+
+ }
+
+ .modal_content .modal_estruture .vazio {
+     border: none;
+     margin-left: 100px;
+     padding: 10px;
+     background-color: silver;
+     width: 100px;
+     border-radius: 50%;
+ }
+
+ .modal_estruture .name {
+     text-align: center;
+     font-size: 17px;
+     color: rgb(11, 0, 58);
+
+ }
+
+ .langue {
+     text-align: center;
+     margin-top: 10px;
+     color: rgb(66, 12, 138);
+ }
+
+ .modal_estruture .cargo p {
+     margin-top: 10px;
+     color: white;
+ }
+
+ .btn_conluido {
+     float: right;
+     background-color: white;
+     margin-bottom: 30px;
+     border: none;
+     border-radius: 3px;
+     padding: 20px;
+     color: rgb(58, 2, 110);
+     font-size: 14px;
+     margin-right: 10px;
+     box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, .2);
+     cursor: pointer;
+
+ }
+
+ .social_icones_modal {
+     margin: 30px auto;
+     background-color: rgba(0, 0, 0, 0.4);
+     height: 43px;
+     text-align: center;
+
+ }
+
+ .social_icones_modal .bx {
+     color: rgb(150, 150, 150);
+     font-size: 20px;
+
+     /* Margin  margin (2  kkkkk */
+     margin-top: 9px;
+     margin-left: 20px;
+     font-size: 31px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+
+
+ form {
+     padding: 10px;
+     height: 200px;
+     width: 100%;
+     color: white;
+     background-color: rgb(130, 35, 255);
+ }
+
+ legend {
+     text-align: center;
+     padding: 10px;
+ }
+
+ form fieldset {
+     margin: 12px auto;
+     height: 150px;
+     width: 300px;
+     display: flex;
+     justify-content: center;
+
+ }
+
+ .contact {
+     color: white;
+     font-size: 29px;
+     margin: 20px auto;
+
+ }
+
+ .contact i {
+     color: white;
+     margin-left: 30px;
+     width: 50px;
+     height: 50px;
+     padding: 10px;
+     cursor: pointer;
+     text-align: center;
+     border-radius: 5px;
+     transition: 0.3s background ease-in-out;
+ }
+
+ .contact i:hover {
+     background-color: rgb(255, 255, 255);
+     color: rgb(20, 1, 37);
+ }
+
+
+ .mensagem input {
+     text-align: center;
+     font-size: 16px;
+     width: 70px;
+     color: white;
+     padding: 2px;
+     border: none;
+     float: right;
+     /*   Métodos diferentes, resultados iguais kkkk*/
+     margin-top: 10px;
+     margin-left: 12px;
+
+ }
+
+ @media screen and (max-width:624px) {
+
+     .menuTrue {
+         display: none;
+     }
+
+     .logo {
+         margin-left: 20px;
+     }
+
+     .menuHam img {
+         display: block;
+     }
+
+     .pInterfacetextMobile {
+         display: block;
+     }
+
+     .pInterface {
+         margin-top: -80px;
+         display: block;
+     }
+
+     .text {
+         display: none;
+     }
+
+     .start_btn {
+         display: block;
+     }
+
+     .cards {
+         width: 100%;
+     }
+
+     .comenter {
+         margin-top: 400px;
+     }
+
+     .imglogo {
+         margin-left: 150px;
+     }
+
+     .modal_content {
+         width: 100%;
+     }
+
+     .active_modal img {
+         display: block;
+     }
+
+ }

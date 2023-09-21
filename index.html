@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!---   link do css, box e Javascript-->
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <script src="assets/js/main.js" defer></script>
+
+    <!--- importar o google fonts = 'Roboto'----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/icone/favicon-32x32.png" type="image/x-icon">
+    <!----- Meta dados  (SEO)-->
+    <meta name="description" content="A proxima Geração de programadores Angolanos">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ango star</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--- icone de usuario-->
+        <div class="logo">
+            <a href="#"> <i class="bx bx-book"></i></a></a>
+
+        </div>
+        <!----  menu -->
+        <div class="menu">
+            <div class="menuTrue">
+                <ul>
+
+                    <li><a href="#start">Quem somos</a></li>
+                    <li><a href="#" onclick="active_modal()">Membros</a></li>
+                </ul>
+            </div>
+            <div class="menuSocialIcons">
+                <a href="#"><i class="bx bx-user" onclick="Modal_login()"></i></a>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <!---- Actie_ modal, imagem para ctivar modal-->
+    <div class="active_modal">
+        <img src="assets/img/menu/jfEvBEPIf6PE.gif" alt="img gif" onclick="active_modal()">
+    </div>
+
+
+
+
+
+    <!-----  Texo para mobile apenas -->
+    <div class="pInterfacetextMobile">
+        <h1>
+            Ango_Star <i class="bx bx-star"></i>
+
+        </h1>
+        <p>Preparados para a Proxima Fase</p>
+        <p>Vem aprender programação</p>
+    </div>
+
+    <section class="pInterface">
+
+        <div class="imglogo">
+
+            <a href="#"><i class="bx bx-home"></i></a>
+
+        </div>
+        <div class="imglogo segundo">
+
+            <a href="#"><i class="bx bx-user"></i></i></a>
+
+        </div>
+        <div class="text">
+            <h1>Ango_Star <i class="bx bx-star"></i></h1>
+            <h3>Proxima Geração de <br>
+                programadores Angolanos
+            </h3>
+            <p> Junte-se no que será uma das melhores escolas de programação <br> de Angola</p>
+            <p>Conheça-nos</p>
+            <div class="textLink">
+                <li><a href="#start" class="active">começar</a></li>
+                <li><a href="#"><i class="bx bx-right-arrow-alt"></i></a></li>
+                <li><a href="#">Mais</a></li>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="start_btn"><a href="#start"> Começar </a></div>
+
+
+    <section class="cards" id="start">
+        <div class="estruture">
+            <a href="#"><i class="bx bx-book"></i></a>
+
+
+            <h2> Quem somos</h2>
+            <p>Somos estudantes e Amantes de Tecnologia, atualmente formado por 4 elementos </p>
+        </div>
+        <div class="estruture">
+            <a href="#"><i class="bx bx-diamond"></i></a>
+
+            <h2> Nosso Objectivo </h2>
+            <p>Nosso objectivo é ajudar o maior numero de pessoas a ter conhecimento na area de TI, e tornar o nome da
+                nossa Startup conhecido (Ango_Star) </p>
+        </div>
+        <div class="estruture">
+            <a href="#"><i class="bx bx-briefcase-alt-2"></i></a>
+            <h2> Serviços => Aulas</h2>
+            <p>VISUALG, HTML5, CSS, JS(ES6), GITHUB, PHP, DBMS, Linux Intro, Node Intro,bootstrap, React,Laravel,
+                Electron. c# etc...</p>
+
+        </div>
+        <div class="estruture">
+            <a href="#"><i class="bx bx-briefcase-alt-2"></i></a>
+            <h2>Serviços => Mão na Massa</h2>
+            <p>Sites(SPA)
+                <br>Blogues
+                <br>Aplicação para gestão
+                <br>Venda de aplicativos e Sistemas
+            </p>
+        </div>
+    </section>
+    <div class="comenter">
+        <h3>Fale conosco </h3>
+        <p>Ango_Star</p>
+    </div>
+
+
+
+
+    <!----- Criação do modal para Logon-->
+
+    <div class="modalLogon">
+        <div class="contentLogon">
+            <div class="bx bx-edit editar_user" onclick="editar_user()"></div>
+            <div class="userinfo">
+                <div class="UserImage">
+                    <img src="assets/img/membros/person 2.png" alt="imagem de pessoas">
+                </div>
+                <h4 class="Usernome">Nome do usuario</h4>
+            </div>
+
+            <button class="logon_btn_concluido" onclick="logon_btn_concluido()">Concluido</button>
+            <div class="Editor">
+                <i class="bx bx-x fechar_editor" onclick="fechar_editor()"></i>
+           <div class="editorImg">
+            <input type="file" class="inputNone" id="foto">
+            <label for="foto">
+
+                <img src="assets/img/membros/person 2.png" alt="teste">
+            </label>
+        </div >
+        <i class="bx bx-edit editor_i"></i>
+        <br>
+       <hr>
+         <div class="editorNome">
+          <label for="nome">Nome:</label>
+          <input 
+          type="text" 
+          id="none"
+          placeholder="Digite o seu nome"
+          class="EditadoNome"
+          >
+
+         </div>
+         <button class="editar_concluido feito" onclick="feito()">Feito</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-------- criação do modal-->
+
+    <div class="modal">
+        <div class="icone_close" onclick="close_modal()"><i class="bx bx-x"></i></div>
+        <h2>
+            Membros da equipa
+        </h2>
+        <p>Akatsuki</p>
+
+        <div class="modal_content">
+
+            <div class="modal_estruture primeiro">
+                <img src="assets/img/membros/Mauŕcio Romão.jpg" alt="Maurício Romão">
+                <div class="name">
+                    <h4>Maurício Romão</h4>
+                </div>
+                <div class="langue">Back-End Developer</div>
+                <div class="cargo">
+                    <p>C E O</p>
+                </div>
+                <div class="social_icones_modal">
+                    <a href="mailto:devmauroromao@gmail.com"> <i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://free.facebook.com/mauricioromao.antonio?eav=AfZAUp9tCBZsa1dDFVRMIXZg0kDMz6nob-d0N7FL_zqrrNtcy3u14pc8ZXv3KnHk04U&ref_component=mfreebasic_home_header&ref_page=%2Fwap%2Fprofile_timeline.php&refid=17&paipv=0"
+                        target="_blank"><i class="bx bxl-facebook"></i></a>
+                </div>
+                <div class="codenome">
+                    <p>Hoshigaki Kisame</p>
+                </div>
+            </div>
+
+            <div class="modal_estruture segundo">
+                <img src="assets/img/membros/eliano.jpg" alt="Eliano Baptista">
+                <div class="name">
+                    <h4>Eliano Baptista</h4>
+                </div>
+                <div class="langue">Front-End Developer</div>
+                <div class="cargo">
+                    <p>D. Tecnológico </p>
+                </div>
+                <div class="social_icones_modal">
+                    <a href="https://free.facebook.com/juliobernadobatista.elhano?eav=AfaaDl3PGjd76npklVjZ-TJfsvXFjPxEa5OkPvSE23oggrYuwyv7wCRfbhwkPuwEMWM&refid=12&paipv=0"
+                        target="_blank"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"> <i class="bx bxl-instagram"></i></a>
+                </div>
+                <div class="codenome">
+                    <p>Kakuso</p>
+                </div>
+            </div>
+            <div class="modal_estruture terceiro">
+                <img src="assets/img/membros/person 2.png" alt="person" class="vazio">
+
+                <div class="name">
+                    <h4>Joshua</h4>
+                </div>
+                <div class="langue">Front-End Developer</div>
+                <div class="cargo">
+                    <p>CO_fundador</p>
+                </div>
+                <div class="social_icones_modal">
+                    <a href="#"> <i class="bx bxl-facebook"></i></a>
+                    <a href="#"> <i class="bx bxl-instagram"></i></a>
+                </div>
+                <div class="codenome">
+                    <p>Hidan</p>
+                </div>
+            </div>
+            <div class="modal_estruture quarto">
+                <img src="assets/img/membros/person 2.png" alt="person" class="vazio">
+                <div class="name">
+                    <h4>Reynaldo Afonso</h4>
+                </div>
+                <div class="langue">Front-End Developer <br>Designer</div>
+                <div class="cargo">
+                    <p>Co_fundador</p>
+                </div>
+                <div class="social_icones_modal">
+                    <a href="https://free.facebook.com/reinaldoafonso.xilala?eav=AfZ73OObz1bVDc3tAPNkJGh0HgrMH-mcIKUoSWyA9ax3TZPPwmviCx9TY_ocxOXH284&refid=46&__xts__%5B0%5D=12.Abo1VN9y7k8kuZYdAxFFC0825gqjSW_1Zunwh81bjYvnAu5NbYBk6B5x1rgwQUsOoKkTPfEPfyY-4FCKc_tuGb-MS-M4Lw1c0KZNorERZzzVkW024P0UahgYuxVQbktN5SFVpi30Tv8mZS8nEXz_JMFbbUYFFJ_CLYerUdekmlwc_1M3vrDqjoOQhwgz4-TuNcxWXfi4nhErAng92mSyCOaPfmJG76aTkEa6u249GzNMqUDGbSRYfY8eoB8fo7iLXopoJoE5kfgBv3C32VrzbvO1CYBEAACm-0ZRZ1o7BhSLo-V19vL4pnPJXTc_e1fmj087UXSAbj_MZWyxaSVYy0hqhcfNY7DbRiuzWpzBMFeqhLkcYg_YTPgAYUoqGF0K3VPnqZt4GFAVeq_NzLIyr_BzkAV1oXDwVmQp0mCqb4deyb7dRRnpoVZ2nkD9JjEs39xNyrp6ihxjlI3fJ4wgDU-1LoLtppqaxGXt698BggDsFwYWM1jtQcz3GA1yNi8jshTODPSWrymh77LfOYnirD1vKlQwd5FpbKT2nbZCT3Ybyvn2pTV5uf7LOJ3aOdIhPxc&paipv=0"
+                        target="_blank"><i class="bx bxl-facebook"></i></a>
+
+                </div>
+                <div class="codenome">
+                    <p>Itachi</p>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="btn_conluido" onclick="close_modal()">Concluido</button>
+    </div>
+
+
+
+
+    <footer class="footer">
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Fale Conosco</legend>
+                <div class="contact" id="contact">
+
+                    <a href="mailto:devmauroromao@gmail.com" target="_blank">
+                        <i class="bx bxl-gmail"></i>
+                    </a>
+                    <a href="#">
+
+                        <i class="bx bxl-messenger">
+
+                        </i>
+                    </a>
+                    <a href="#contact"><i class="bx bxl-whatsapp" onclick="sms()"></i></a></a>
+                    <br>
+
+                    <div class="mensagem"><input type="text" disabled value=""></div>
+                </div>
+        </form>
+
+    </footer>
+</body>
+
+</html>
