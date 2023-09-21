@@ -38,15 +38,7 @@ function logon_btn_concluido() {
 function Modal_login() {
     const modal = document.querySelector('.modalLogon').style.display = 'flex'
 }
-function sms() {
-    // vars
-    const number = '+244 941 391 276'
-    const mensage = document.querySelector('.mensagem input')
-    //exe.bat kkk
-    mensage.value = 'copiado'
-    navigator.clipboard.writeText(number)
 
-}
 
 
 function editar_user() {
